@@ -10,4 +10,4 @@ This repository contains links (above) to online calculators that produce confid
 * [Link to paper will be inserted after publication](https://insert_link)
 
 
-The code for the Shiny apps was based on the [length/coverage optimal confidence interval calculator for the binomial distribution](https://jdoi.shinyapps.io/LCO-CI/), created by professor [Jimmy Doi](https://statweb.calpoly.edu/jdoi)
+The code for the Shiny apps was based on the [length/coverage optimal confidence interval calculator for the binomial distribution](https://jdoi.shinyapps.io/LCO-CI/), created by professor [Jimmy Doi](https://statweb.calpoly.edu/jdoi).
