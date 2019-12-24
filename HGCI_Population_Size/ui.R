@@ -5,7 +5,7 @@ shinyUI(fluidPage(
   tags$title("Confidence Interval For Hypergeometric Population Size"),
   titlePanel("Confidence Interval For Hypergeometric Population Size"),
   
-  div(a(href="https://mfschilling.shinyapps.io/hgci-success-count/",target="_blank", "Click Here to Solve for Success Count Instead"),
+  div(a(href="https://mfschilling.shinyapps.io/hgci-success-count/",target="_blank", "Click Here to Estimate Success Count Instead"),
       style = "font-size: 18pt;color:black"),br(),br(),
   sidebarPanel(
     

@@ -15,7 +15,7 @@ LCO.CI.M <- function(n,N,level)
 {
   # Check that user has asked for a sample size less than or equal to the population size
   if (n > N){
-    stop("Sample size can not be greater than population size")
+    stop("Sample size cannot be greater than population size.")
     return(1)
   }
   

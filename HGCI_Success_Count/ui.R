@@ -1,11 +1,11 @@
 library(shiny)
+options(shiny.sanitize.errors = FALSE)
 
 shinyUI(fluidPage(
-  
   tags$title("LCO Confidence Interval For Hygergeometric Success Count"),
   titlePanel("LCO Confidence Interval For Hygergeometric Success Count"),
   
-  div(a(href="https://mfschilling.shinyapps.io/hgci-population-size/",target="_blank", "Click Here to Solve for Population Size Instead"),
+  div(a(href="https://mfschilling.shinyapps.io/hgci-population-size/",target="_blank", "Click Here to Estimate Population Size Instead"),
       style = "font-size: 18pt;color:black"),br(),br(),
   
   sidebarPanel(
