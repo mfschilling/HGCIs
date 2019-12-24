@@ -19,7 +19,7 @@ shinyUI(fluidPage(
     
     sliderInput("num_successes", 
                 label = h5("Number of Successes:"),
-                min = 1, max = 100, value = 40),br(),
+                min = 1, max = 100, value = 50),br(),
     
     
     div(submitButton("Submit"),align="right"), br(), br(), br(), br(), br(), 

@@ -20,7 +20,7 @@ shinyUI(fluidPage(
     
     sliderInput("population_size", 
                 label = h5("Population Size:"),
-                min = 1, max = 100, value = 100),br(),
+                min = 1, max = 100, value = 50),br(),
     
     
     div(submitButton("Submit"),align="right"), br(), br(), br(), br(), br(), 
