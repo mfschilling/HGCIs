@@ -1,12 +1,13 @@
 library(shiny)
+options(shiny.sanitize.errors = FALSE)
 
 shinyUI(fluidPage(
+  tags$title("LCO Confidence Interval For Hygergeometric Success Count"),
+  titlePanel("LCO Confidence Interval For Hygergeometric Success Count"),
   
-  tags$title("Confidence Interval For Hypergeometric Population Size"),
-  titlePanel("Confidence Interval For Hypergeometric Population Size"),
-  
-  div(a(href="https://mfschilling.shinyapps.io/hgci-success-count/",target="_blank", "Click Here to Estimate Success Count Instead"),
+  div(a(href="https://mfschilling.shinyapps.io/hgci-population-size/",target="_blank", "Click Here to Estimate Population Size Instead"),
       style = "font-size: 18pt;color:black"),br(),br(),
+  
   sidebarPanel(
     
     sliderInput("level", 
@@ -17,15 +18,15 @@ shinyUI(fluidPage(
                 label = h5("Sample Size:"),
                 min = 1, max = 100, value = 25),br(),
     
-    sliderInput("num_successes", 
-                label = h5("Number of Successes:"),
+    sliderInput("population_size", 
+                label = h5("Population Size:"),
                 min = 1, max = 100, value = 50),br(),
     
     
     div(submitButton("Submit"),align="right"), br(), br(), br(), br(), br(), 
     
     
-    div("CI Generator Shiny app",align="right", style = "font-size: 8pt"), 
+    div("LCO-CI Generator Shiny app",align="right", style = "font-size: 8pt"), 
     
     div("maintained by", 
         a(href="http://www.csun.edu/~hcmth031/",target="_blank", 
@@ -33,12 +34,16 @@ shinyUI(fluidPage(
     
     div("Source Code:",
         a(href="https://github.com/mfschilling/HGCIs",
-          target="_blank","GitHub Repo"),align="right", style = "font-size: 8pt")
+          target="_blank","GitHub Repo"),align="right", style = "font-size: 8pt"),
+    
+    div("For LCO", tags$i("binomial"), "confidence intervals click",
+        a(href="http://shiny.calpoly.sh/LCO_CI_Generator/",
+          target="_blank","here"),align="left", style = "font-size: 12pt"),
   ),
   
   mainPanel(
-    p("Details on this method of generating the confidence interval for 
-      the hypergeometric population size can be found in the following journal 
+    p("Details on the Length/Coverage Optimal (LCO) confidence interval for 
+      the hypergeometric success count can be found in the following journal 
       article:"),
     
     tags$blockquote("[The journal details will be inserted here after publication]",
@@ -53,9 +58,9 @@ shinyUI(fluidPage(
     
     textOutput("textlevel"),
     textOutput("textsample_size"),
-    textOutput("textnum_successes"),
+    textOutput("textpopulation_size"),
     br(),
-    verbatimTextOutput("Results")
+    verbatimTextOutput("LCOresults")
     )
   )
   )
