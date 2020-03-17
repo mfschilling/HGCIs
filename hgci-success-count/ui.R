@@ -46,10 +46,9 @@ shinyUI(fluidPage(
       the hypergeometric success count can be found in the following journal 
       article:"),
     
-    tags$blockquote("[The journal details will be inserted here after publication]",
-                    em("example journal"),
-                    a(href="[TODO: Insert journal link when published]", 
-                      target="_blank", "(Online access)")),
+    tags$blockquote(" ",
+                    a(href="https://www.tandfonline.com/doi/full/10.1080/03610926.2020.1737879", 
+                      target="_blank", "A new approach to precise interval estimation for the parameters of the hypergeometric distribution")),
     
     p("The ", a(href="https://github.com/mfschilling/HGCIs", target="_blank", "Github Repo"), 
       "contains the R code for the CI algorithm and Shiny app"),
