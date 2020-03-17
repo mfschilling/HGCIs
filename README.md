@@ -8,7 +8,6 @@
 This repository contains links (above) to online calculators that produce confidence intervals for the success count or the population size, given user-specified sample size and the known parameter value. This repository also contains the R code for the algorithms contained in the paper below, and the code for the interactive Shiny apps. In addition to the above linked Shiny apps, the generator scripts can be used on their own in R, which allows for calculation for confidence intervals using higher input parameters.  
 
 Link to the paper:  
-
 * [A new approach to precise interval estimation for the parameters of the hypergeometric distribution
 ](https://www.tandfonline.com/doi/full/10.1080/03610926.2020.1737879)
 
