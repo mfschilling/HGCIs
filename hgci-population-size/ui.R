@@ -41,9 +41,12 @@ shinyUI(fluidPage(
       the hypergeometric population size can be found in the following journal 
       article:"),
     
-    tags$blockquote(" ",
+    tags$blockquote(a(href="https://www.tandfonline.com/doi/full/10.1080/03610926.2020.1737879", 
+                      target="_blank", 'Schilling, M.F. and Stanley, A., “A new approach to precise interval estimation for the parameters of the hypergeometric distribution",'),
                     a(href="https://www.tandfonline.com/doi/full/10.1080/03610926.2020.1737879", 
-                      target="_blank", "A new approach to precise interval estimation for the parameters of the hypergeometric distribution")),
+                    target="_blank", em("Communications in Statistics-Theory and Methods,")),
+                    a(href="https://www.tandfonline.com/doi/full/10.1080/03610926.2020.1737879", 
+                    target="_blank", "March 2020")),
     
     p("The ", a(href="https://github.com/mfschilling/HGCIs", target="_blank", "Github Repo"), 
       "contains the R code for the CI algorithm and Shiny app"),
